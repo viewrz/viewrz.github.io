@@ -11,13 +11,13 @@
   <meta name="description" content="Watch the best, not the rest. Awesome clips of Youtube videos, cut by you and others.">
 
   <!-- CSS -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <style>
     body {
       padding: 20px;
       font-size: 16px;
       text-align: center;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Lato', sans-serif;
     }
     p {
       margin: 10px auto;
@@ -27,12 +27,6 @@
       max-width: 80%;
       display: inline-block;
       margin-bottom: 20px;
-    }
-    a, a:active, a:focus, a:hover {
-      color: #f80000;
-      text-decoration: underline;
-      font-weight: bold;
-      white-space: nowrap;
     }
   </style>
 
@@ -48,28 +42,15 @@
   </script>
 </head>
 <body>
-  <p>Hi! Thanks for using</p>
   <p>
     <img src="/logo.jpg" alt="Viewrz">
   </p>
-  <p>
-    Our team is now dedicated to <a href="http://siz.io">Siz</a>.
-  </p>
-  <p>
-    In <span id="countdown">10</span> seconds you'll be redirected to <a href="http://app.siz.io/factory">the Siz Factory</a>,
-    where you can cut videos into gifs and video strips!
-  </p>
+  <p>Not found - redirecting to home page...</p>
   <p style="color:#bbb;font-size:12px">© Viewrz SAS - 2015</p>
   <script>
-    (function() {
-      var countdown = 10;
-      function tick () {
-        countdown = Math.max(countdown - 1, 0);
-        document.getElementById('countdown').innerHTML = countdown;
-        if (countdown === 0) window.location = 'http://app.siz.io/factory';
-      }
-      setInterval(tick, 1000);
-    }());
+    setTimeout(function () {
+      window.location = '/'
+    }, 1000)
   </script>
 </body>
 </html>
